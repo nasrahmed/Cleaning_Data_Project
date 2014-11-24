@@ -36,3 +36,28 @@ Processed Data:
 3-Appropriately labelling the data set with descriptive variable names (this is found in the feature file and was mapped to variable feature)
 4-Extracts only the measurements on the mean and standard deviation for each measurement
 5-Last is making a new Data set like the one we did in step 4 but it calculates the average of each variable for each activity and each subject.
+
+Variables:
+=====================
+1-feature: raw data of feature file
+2-activity_labels: raw data of activity label file
+3-x_train: raw data of x_train file
+4-y_train: raw data of y_train file
+5-subject_train: raw data of subject_train file
+6-x_test: raw data of x_test file
+7-y_test: raw data of y_test file
+8-subject_test: raw data of subject_test file.
+
+9-label_y_train: merging y_train and activity_label
+10-label_y_test: merging y_test and activity_label
+
+11-x_train_with_y: like x_train but adding to it the column (activity label based on y_train)-
+12-train_data_set: The new Data set for train, include x_train_with_y added to it 2 columns	(subject number and dataset_type),
+		the dataset_type is for identifying the type of this dataset (Train or Test)
+13-x_test_with_y: like x_test but adding to it the column (activity label based on y_test)
+14-test_data_set:The new Data set for test, include x_test_with_y added to it 2 columns	(subject number and dataset_type),
+		the dataset_type is for identifying the type of this dataset (Train or Test)
+15-full_data_set: is the full data set the combined Train and Test dataset together
+16-mean_and_std_cols: holds the column number that matches mean() or std()
+17-mean_and_std_data_set: is like the full dataset but with only the columns ( mean_and_std_cols, subject_number, activity_label,dataset_type)
+18-new_ds: the results dataset, which contains dataset with calculating of average of each variable for each activity and each subject
