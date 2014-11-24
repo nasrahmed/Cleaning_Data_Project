@@ -5,7 +5,7 @@ Files for the project of course Getting and Cleaning Data.
 
 1-run_analysis.R
 
-2-cookbook explaining steps done in the R Script along with variables and data (raw and processed)
+2-cookbook explaining steps done in the R Script along with variables and definition for the data (raw and processed)
 
 
 Here the function assumes that it will take a directory of the files related to the project of the course Getting and Cleaning Data
